@@ -15,9 +15,13 @@ In this example you will learn the basics of Spring data rest, where you can per
 ## Below is some JSON request and response
 
 **Fetch all user**
+
 URL: http://localhost:8080/users
+
 Method: GET
+
 Response:
+
 ```sh
 {
   "_embedded" : {
@@ -63,9 +67,13 @@ Response:
 ```
 
 **Fetch specific user**
+
 URL: http://localhost:8080/users/1
+
 Method: GET
+
 Response:
+
 ```sh
 {
   "name" : "Deepak",
@@ -82,9 +90,13 @@ Response:
 ```
 
 **Fetch users with pagination and sorting**
+
 URL: http://localhost:8080/users?page=0&size=2&sort=name,desc
+
 Method: GET
+
 Response:
+
 ```sh
 {
   "_embedded" : {
@@ -130,9 +142,13 @@ Response:
 ```
 
 **Search user by email**
+
 URL: http://localhost:8080/users/search/findByEmail?email=deep@gmail.com
+
 Method: GET
+
 Response:
+
 ```sh
 {
   "name" : "Deepak",
@@ -149,15 +165,20 @@ Response:
 ```
 
 **Save user**
+
 URL: http://localhost:8080/users/1
+
 Method: POST
+
 Request:
+
 ```sh
 {
     "name":"Ramesh",
     "email":"ramesh@gmail.com"
 }
 ```
+
 Response:
 ```sh
 {

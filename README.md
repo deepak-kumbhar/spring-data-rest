@@ -166,7 +166,7 @@ Response:
 
 **Save user**
 
-URL: http://localhost:8080/users/1
+URL: http://localhost:8080/users/
 
 Method: POST
 
